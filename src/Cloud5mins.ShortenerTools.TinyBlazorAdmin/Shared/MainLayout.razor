@@ -10,16 +10,18 @@
             <AuthorizeView>
                 <Authorized >
                         Hello, @context.User.Identity?.Name! 
-                        <div class=".nav-item"><a class="nav-link btn btn-link" href="/logout?post_logout_redirect_uri=/">Log out</a></div>
+                        <div class="nav-item">
+                            <a class="nav-link btn btn-link" href="/logout?post_logout_redirect_uri=/">Log out</a>
+                        </div>
                 </Authorized>
                 <NotAuthorized>
-                    <div class=".nav-item">
-                    <a href="/login">Log in</a>
+                    <div class="nav-item">
+                        <a href="/login">Log in</a>
                     </div>
                 </NotAuthorized>
             </AuthorizeView>
-            <div class=".nav-item">
-            <a href="https://github.com/FBoucher/AzUrlShortener" target="_blank">About</a>
+            <div class="nav-item">
+                <a href="https://github.com/DaleUWB/AzUrlShortener" target="_blank">About</a>
             </div>
         </div>
 
