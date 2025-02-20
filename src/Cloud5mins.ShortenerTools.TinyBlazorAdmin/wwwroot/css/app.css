@@ -11,9 +11,7 @@ h1:focus {
 a, .btn-link {
     color: #0071c1;
 }
-.top-row.nav-item a {
-    color:#ffc700;
-}
+
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
