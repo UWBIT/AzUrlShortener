@@ -31,11 +31,20 @@ footer {
         white-space: nowrap;
         margin-left: 1.5rem;
         text-decoration: none;
+        /* dale add */
         color:#ffc700;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        line-height: 2rem;
     }
 
     .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
         text-decoration: underline;
+        /* Dale add */
+        background-color: rgba(255, 255, 255, 0.25);
     }
 
     .top-row ::deep a:first-child {
