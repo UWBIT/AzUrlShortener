@@ -1,10 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
     <OutputType>Exe</OutputType>
     <ImplicitUsings>enabled</ImplicitUsings>
   </PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+</PropertyGroup>
+  <ItemGroup>
+    <None Remove="local - Copy.settings.example.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="local.settings.json" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="cronos" Version="0.8.4" />
     <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.8" />

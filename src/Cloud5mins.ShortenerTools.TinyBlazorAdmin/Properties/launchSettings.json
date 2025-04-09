@@ -1,4 +1,26 @@
 {
+  "profiles": {
+    "Cloud5mins.ShortenerTools.TinyBlazorAdmin": {
+      "commandName": "Project", //Specifies that this profile runs the project directly using dotnet run 
+      //host app and be useful if your local app interacts with a remote environment.
+      "commandLineArgs": "https://lively-rock-028603a1e.4.azurestaticapps.net",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
+      "applicationUrl": "https://lively-rock-028603a1e.4.azurestaticapps.net"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}"
+    }
+  },
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -6,25 +28,20 @@
       "applicationUrl": "http://localhost:46660",
       "sslPort": 44350
     }
-  },
-  "profiles": {
-    "Cloud5mins.ShortenerTools.TinyBlazorAdmin": {
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
-      "applicationUrl": "http://localhost:5000",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    }
   }
+
+  //replaced 4/8/2025 by Yuping for local debugging
+    //"profiles": {
+    //  "Cloud5mins.ShortenerTools.TinyBlazorAdmin": {
+    //    "commandName": "Project",
+    //    "commandLineArgs": "http://localhost:7071",
+    //    "launchBrowser": true,
+    //    "environmentVariables": {
+    //      "ASPNETCORE_ENVIRONMENT": "Development"
+    //    },
+    //    "dotnetRunMessages": true,
+    //    "applicationUrl": "http://localhost:5007;https://localhost:5008;"
+    //  }
+    //}
+  //}
 }

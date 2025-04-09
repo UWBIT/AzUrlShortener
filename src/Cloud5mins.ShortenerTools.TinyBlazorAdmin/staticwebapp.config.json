@@ -16,10 +16,10 @@
           "methods": ["GET", "POST"],
           "allowedRoles": ["admin"]
         },
-        {
-          "route": "/login",
-          "rewrite": "/.auth/login/aad"
-        },
+      {
+        "route": "/login",
+        "rewrite": "/.auth/login/aad"
+      },
         {
           "route": "/.auth/login/twitter",
           "statusCode": 404

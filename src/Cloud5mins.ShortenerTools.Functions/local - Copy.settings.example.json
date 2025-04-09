@@ -10,4 +10,17 @@
     "CORS": "*",
     "CORSCredentials": false
   }
+
+  //replaced 4/8/2025 by Yuping
+  //{
+  //  "IsEncrypted": false,
+  //  "Values": {
+  //    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+  //    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+  //  },
+  //  "Host": {
+  //    "CORS": "*"
+  //  }
+  //}
+
 }

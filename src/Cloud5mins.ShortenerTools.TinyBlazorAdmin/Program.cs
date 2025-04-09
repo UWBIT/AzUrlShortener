@@ -7,7 +7,12 @@ using AzureStaticWebApps.Blazor.Authentication;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
+
 var baseAddress = builder.HostEnvironment.BaseAddress;
+
+//var baseAddress = builder.Configuration["ApiConfig:BaseUrl"]; //replaced by Yuping 4/9/2025 for local debugging
+
+
 builder.Services
         .AddScoped(sp => new HttpClient { BaseAddress = new Uri(baseAddress) })
         .AddStaticWebAppsAuthentication();

@@ -149,6 +149,7 @@ namespace Cloud5mins.ShortenerTools.Core.Domain
             ShortUrlEntity originalUrl = await GetShortUrlEntity(urlEntity);
             originalUrl.Url = urlEntity.Url;
             originalUrl.Title = urlEntity.Title;
+            originalUrl.CreatedBy = urlEntity.CreatedBy; //added 3/28/2025 by Yuping
             originalUrl.SchedulesPropertyRaw = JsonSerializer.Serialize<List<Schedule>>(urlEntity.Schedules);
 
             return await SaveShortUrlEntity(originalUrl);

@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloud5mins.ShortenerTools.Core", "Cloud5mins.ShortenerTools.Core\Cloud5mins.ShortenerTools.Core.csproj", "{7449639F-62CD-4B2C-AB98-58C85904FDC4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloud5mins.ShortenerTools.TinyBlazorAdmin", "Cloud5mins.ShortenerTools.TinyBlazorAdmin\Cloud5mins.ShortenerTools.TinyBlazorAdmin.csproj", "{B5FB0C0A-05BA-491B-9379-CE4BDF025B3B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6388276F-17B7-4AB0-9A6B-C0E2F4A3D283} = {6388276F-17B7-4AB0-9A6B-C0E2F4A3D283}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
