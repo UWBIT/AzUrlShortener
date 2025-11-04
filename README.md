@@ -1,3 +1,4 @@
+#exploration of this product as a url shortener for uwb, have moved to Shlink project/s. retireing this repo.
 # Azure Url Shortener (AzUrlShortener)
 
 [![Deploy to Azure](https://img.shields.io/badge/Deploy%20To-Azure-blue?logo=microsoft-azure)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FAzUrlShortener%2Fmain%2Fsrc%2Fdeployment%2FazureDeploy.json)
